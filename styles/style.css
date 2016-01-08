@@ -434,7 +434,10 @@ body {
 }
 
 #specializations .spec {
-	margin: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
+	min-height: 250px;
+	line-height: 30px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -448,11 +451,10 @@ body {
 	}
 }
 @media screen and (max-width: 1000px) {
-	#specializations .spec-container .label {
-	}
 
 	#specializations .spec {
 		margin: 0;
+		min-height: 0px;
 	}
 }
 @media screen and (max-width: 600px) {
