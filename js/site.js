@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 	var navSliderWidth = $('.navSlider').width();
 	var bgVisible = false;
-	
+
 	$('.navSlider').css("right", (-1 * navSliderWidth)+ 'px');
 
 	$(".sliding-link").click(function(event) {
