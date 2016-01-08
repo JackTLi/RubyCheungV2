@@ -1,3 +1,7 @@
+section {
+	position:relative;
+}
+
 .sectionContent {
 	width: calc(100% - 100px);
 	max-width: 1200px;
@@ -192,6 +196,16 @@ body {
 	body {
 		font-size: 12px;
 	}	
+}
+
+.CopyRight {
+	position: absolute;
+    bottom: 15px;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    color: #fff;
+    opacity: 0.5;
 }
 
 
@@ -394,6 +408,10 @@ body {
 	}
 }
 
+#specializations .sectionContent {
+	padding-bottom: 0 !important; /* Need to override to make gradient effect*/
+}
+
 #specializations .spec-container {
 	width: 100%;
 	color: #dadcdd;
@@ -464,6 +482,75 @@ body {
 
 #storytelling {
 	background-image: url(../Images/Home/skills/storytelling.png);
+}
+
+#skills {
+	background-image: url(../images/Home/HeaderPicture.jpg);
+	background-position: bottom center;
+	background-size: cover;
+}
+
+#skills .gradient {
+	background: -webkit-linear-gradient(bottom, rgba(132,138,144,0), rgba(132,138,144,0), rgba(132,138,144,1)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom, rgba(132,138,144,0), rgba(132,138,144,0), rgba(132,138,144,1)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom, rgba(132,138,144,0), rgba(132,138,144,0), rgba(132,138,144,1)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to top, rgba(132,138,144,0), rgba(132,138,144,0), rgba(132,138,144,1)); /* Standard syntax (must be last) */
+}
+
+#skills .sectionContent {
+	padding-top: 100px; /* override for gradient effect*/
+}
+
+#skills a.toolImageWrapper {
+	padding:20px;
+	border-radius: 50%;
+	display:inline-block;
+	border: 4px solid transparent;
+	transition:.10s;
+}
+@media screen and (min-width: 601px) {
+	#skills a.toolImageWrapper:hover {
+		border: 4px solid rgba(255, 255, 255, .85);
+	}
+}
+
+#skills ul {
+	padding-left:0;
+	padding-right:0;
+	display:inline-block;
+	width:100%;
+	padding-bottom: 200px;
+}
+
+#skills ul li {
+	float:left;
+	list-style-type: none;
+	vertical-align: middle;
+	display:inline-block;
+	text-align: center;
+	width: 20%;
+}
+
+@media screen and (max-width: 1000px) {
+	#skills ul {
+		padding-bottom: 100px;
+	}
+
+	#skills a.toolImageWrapper {
+		padding: 0;
+	}
+
+	#skills ul li a img {
+		width: 70px;
+	}
+}
+@media screen and (max-width: 600px) {
+	#skills ul {
+		padding-bottom: 50px;
+	}
+	#skills ul li a img {
+		width: 35px;
+	}
 }
 
 
